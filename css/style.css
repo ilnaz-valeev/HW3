@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy-Bold", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-top: 14px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 21px;
+}
+
+.header__img {
+  display: flex;
+  align-items: center;
+  margin-right: 337px;
+  margin-left: 77px;
+}
+
+.logo {
+  margin-right: 14px;
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.header__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.header__link span {
+  margin: 0 0 0 4px;
+}
+
+.top__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 0;
+  margin-bottom: 51px;
+}
+
+.top__info {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.subtitle {
+  font-size: 60px;
+  color: #000;
+  font-weight: 550;
+  margin-bottom: 17px;
+}
+
+.subtitle__p {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.top__buttons {
+  margin-top: 30px;
+}
+
+.button__one {
+  border-radius: 50px;
+  width: 140px;
+  height: 50px;
+  background: #f25822;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+
+.button__two {
+  width: 140px;
+  height: 50px;
+  font-size: 15px;
+  margin-left: 20px;
+  color: #888;
+  border: none;
+  background: transparent;
+}
+
+.top__image {
+  max-width: 40%;
+}
+
+.top__image img {
+  width: 100%;
+  height: auto;
+}
+
+.top__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 34px;
+  margin-top: 50px;
+}
+
+.footer__img {
+  width: 100px;
+  height: auto;
+}
