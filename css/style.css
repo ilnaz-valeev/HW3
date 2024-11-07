@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
 }
 
 body {
@@ -9,58 +10,74 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   padding-top: 14px;
+  background-color: #f4f4f4; 
 }
 
+/*верхняя часть страницы с логотипом и мкню */
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   padding: 20px 0;
   margin-bottom: 21px;
 }
 
-.header__img {
+/* Логотипы в верхней части страницы */
+.top__header-img {
   display: flex;
   align-items: center;
-  margin-right: 337px;
-  margin-left: 77px;
+  gap: 14px; 
+  
 }
 
-.logo {
+/* Логотипы в верхней части страницы */
+.top__header-logo {
   margin-right: 14px;
+  cursor:pointer;
 }
 
-.header {
+/* Навигация */
+.top__nav {
   display: flex;
   gap: 20px;
   font-size: 14px;
 }
 
-.header__link {
+/* Ссылки навигации */
+.top__nav-link {
   font-size: 14px;
   text-decoration: none;
   color: #000;
   font-weight: 600;
 }
-.header__link span {
-  margin: 0 0 0 4px;
+/* Изменение цвета ссылки при нажатии */
+.top__nav-link:active {
+  color: #f25822; 
 }
 
+
+.top__nav-link span {
+  margin-left: 4px;
+}
+
+/* Блок контента с текстом и кнопками */
 .top__content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 80px;
-  gap: 0;
   margin-bottom: 51px;
+  padding-bottom: 61px;
+  gap: 20px; /* Уменьшите значение gap для прижатия изображения */
 }
 
+
+/* Информационная часть контента */
 .top__info {
   max-width: 50%;
-  margin-right: 20px;
 }
 
+/* Заголовок */
 .subtitle {
   font-size: 60px;
   color: #000;
@@ -68,17 +85,20 @@ body {
   margin-bottom: 17px;
 }
 
+/* Описание под заголовком */
 .subtitle__p {
   font-size: 20px;
   color: #888;
   margin-bottom: 16px;
 }
 
+/* Кнопки */
 .top__buttons {
   margin-top: 30px;
 }
 
-.button__one {
+/* Кнопка 1 */
+.button--primary {
   border-radius: 50px;
   width: 140px;
   height: 50px;
@@ -86,9 +106,16 @@ body {
   color: #fff;
   font-size: 15px;
   border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.button__two {
+.button--primary:hover {
+  background: #d8471f; 
+}
+
+/* Кнопка 2 */
+.button--secondary {
   width: 140px;
   height: 50px;
   font-size: 15px;
@@ -96,8 +123,14 @@ body {
   color: #888;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
+.button--secondary:hover {
+  color: #f25822; 
+}
+
+/* Изображение на странице */
 .top__image {
   max-width: 40%;
 }
@@ -107,15 +140,22 @@ body {
   height: auto;
 }
 
+/* Логотипы внизу страницы */
 .top__logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 34px;
   margin-top: 50px;
+
 }
 
-.footer__img {
+.footer__logo {
   width: 100px;
   height: auto;
+  object-fit: contain; 
+  margin: 0 10px; 
+    width: 160px;
+  height: 50px;
 }
+
+
